@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Thames — Control</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="control.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>How do you feel about the Thames River?</h1>
+      <p>Choose one to change the visual.</p>
+      <div class="grid">
+        <button data-mode="Artistic">Artistic and Romantic</button>
+        <button data-mode="Beautiful">Beautiful and Charming</button>
+        <button data-mode="Calm">Calm and Peaceful</button>
+        <button data-mode="Historical">Historical and Cultural</button>
+        <button data-mode="Majestic" style="grid-column:1/-1">Majestic and Grand</button>
+      </div>
+
+      <div class="slider-container">
+        <label for="volumeSlider">Volume:</label>
+        <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5">
+        <span id="volumeLabel">0.50</span>
+      </div>
+
+      <div class="row">
+        <button id="playPause">Pause</button>
+        <span class="small" id="status">not sent</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="control.js"> </script>
+</body>
+
+</html>
